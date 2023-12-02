@@ -66,8 +66,8 @@ class DepartMent(models.Model):
 
 class MenuList(models.Model):
     """ 菜单表 """
-    router_name = models.CharField(max_length=32, blank=True, null=True, verbose_name="Menu Name")
-    menu_name = models.CharField(max_length=32, blank=True, null=True, verbose_name="First Menu")
+    router_name = models.CharField(max_length=32, blank=True, null=True, verbose_name="Router Name")
+    menu_name = models.CharField(max_length=32, blank=True, null=True, verbose_name="Menu Menu")
     parent = models.ForeignKey(to='self', blank=True, null=True, verbose_name='Menu Parent', on_delete=models.CASCADE)
 
     class Meta:
