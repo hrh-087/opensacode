@@ -10,3 +10,6 @@ from utils.viewsets import CustomModelViewSet
 class MenuListViewSet(CustomModelViewSet):
     queryset = MenuList.objects.all()
     serializer_class = MenuSerializer
+
+
+# def
